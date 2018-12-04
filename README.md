@@ -23,7 +23,8 @@
 
 ## 其他作品
 [共享元素小图到大图浏览，即recycleView到viewPager,pager左右滑动，共享动画item改变](https://github.com/lihangleo2/mPro)  
-[在图片上做标签，图片可缩放。标签跟着移动](https://github.com/lihangleo2/Imgdots)
+[在图片上做标签，图片可缩放。标签跟着移动](https://github.com/lihangleo2/Imgdots) 
+
 [自定义星空图](https://github.com/lihangleo2/AirRelationView)
 
 如果对您有帮助。star下吧（万事起于忽微，量变引起质变！）
