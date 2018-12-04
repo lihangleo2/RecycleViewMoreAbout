@@ -1,6 +1,8 @@
 package comt.leo.picker.horviewtest.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -70,6 +72,22 @@ public class RecycleViewTestActivity extends AppCompatActivity implements View.O
                 adapter.notifyItemRemoved(viewHolder.getAdapterPosition());
             }
 
+
+            @Override
+            public void onSelectedChanged(@Nullable RecyclerView.ViewHolder viewHolder, int actionState) {
+                //item长按被选中了，选中item颜色变深
+                if (actionState != ItemTouchHelper.ACTION_STATE_IDLE) {
+                    viewHolder.itemView.setBackgroundColor(Color.LTGRAY);
+                }
+                super.onSelectedChanged(viewHolder, actionState);
+            }
+
+            @Override
+            public void clearView(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder) {
+                super.clearView(recyclerView, viewHolder);
+                //松手了，将item恢复成白色
+                viewHolder.itemView.setBackgroundColor(Color.WHITE);
+            }
             @Override
             public boolean isLongPressDragEnabled() {
                 //是否可拖拽
