@@ -18,3 +18,10 @@
 
 # recycleView侧滑出现侧滑菜单：
 ![image]( https://github.com/lihangleo2/RecycleViewMoreAbout/blob/master/33.gif) 
+
+
+
+## 其他作品
+[共享元素小图到大图浏览，即recycleView到viewPager,pager左右滑动，共享动画item改变](https://github.com/lihangleo2/mPro)  
+[在图片上做标签，图片可缩放。标签跟着移动](https://github.com/lihangleo2/Imgdots)
+[自定义星空图](https://github.com/lihangleo2/AirRelationView)
